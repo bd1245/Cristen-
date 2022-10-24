@@ -63,14 +63,14 @@ async def help(client, m: Message):
 👈 | لأعاده تشغيل السورس  ⇦  [ `{HNDLR}ريستارت` ]
 ✛┈┉━｢ 𝑾𝑬𝑳𝑺𝑶𝑵 𝑺𝑶𝑼𝑹𝑪𝑬 ｣━┅┈✛
  مطور سورس ويلسون  : @WEIS0N 
-قناة السورس:  @"""
+قناة السورس:  @kyany_el5as"""
     await m.reply(HELP)
 @Client.on_message(filters.command(["الريبو"], prefixes=f"{HNDLR}"))
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
 <b>👋  اهلا {m.from_user.mention}!
-- للمطور : @wjj_u 
-@cr_source 
+- للمطور : @WELS0N 
+@kyany_el5as 
 """
     await m.reply(REPO, disable_web_page_preview=True)
