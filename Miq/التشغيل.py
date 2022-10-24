@@ -196,7 +196,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
+                    photo="https://telegra.ph/file/1b75372005000b9424315.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
@@ -219,7 +219,7 @@ async def vplay(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
+                    photo="https://telegra.ph/file/1b75372005000b9424315.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
