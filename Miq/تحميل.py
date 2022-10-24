@@ -21,7 +21,7 @@ async def song(client, message: Message):
     if not urlissed:
         await client.send_message(            message.chat.id,            "صيغة الأمر غير صالحة!",        )
         return
-    pablo = await client.send_message(message.chat.id, f"**🔎 جاري تحميل : @cr_source ** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**🔎 جاري تحميل : @kyany_el5as ** `{urlissed}`")
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
     mi = search.result()
     mio = mi["search_result"]
@@ -163,7 +163,7 @@ def time_to_seconds(time):
 async def vsong(client, message: Message):
     urlissed = get_text(message)
 
-    pablo = await client.send_message(message.chat.id, f"**🔎 يبحث عن : @cr_source** `{urlissed}`")
+    pablo = await client.send_message(message.chat.id, f"**🔎 يبحث عن : @kyany_el5as** `{urlissed}`")
     if not urlissed:
         await pablo.edit(            "صيغة الأمر غير صالحة!"        )
         return
@@ -184,7 +184,7 @@ async def vsong(client, message: Message):
         with YoutubeDL(opts) as ytdl:
             ytdl_data = ytdl.extract_info(url, download=True)
     except Exception as e:
-        await event.edit(event, f"**التحميل فشل : @cr_source** \n `{str(e)}`")
+        await event.edit(event, f"**التحميل فشل : @kyany_el5as** \n `{str(e)}`")
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
