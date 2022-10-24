@@ -102,7 +102,7 @@ async def play(client, m: Message):
                 add_to_queue(chat_id, songname, dl, link, "Audio", 0)
                 await huehue.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/7e7e8007c9cee7ed710be.jpg",
+                    photo="https://telegra.ph/file/1b75372005000b9424315.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 👥 ايدي الجروب : {chat_id}
