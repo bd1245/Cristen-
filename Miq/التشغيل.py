@@ -305,7 +305,7 @@ async def playfrom(client, m: Message):
                     await call_py.join_group_call(                        chat_id,                        AudioPiped(location),                        stream_type=StreamType().pulse_stream,                    )
                     add_to_queue(chat_id, songname, location, link, "Audio", 0)
                     await m.reply_photo(
-                        photo="https://telegra.ph/file/650d1d66299cac72790fd.jpg",
+                        photo="https://telegra.ph/file/65e384ecb8081ee9d9df2.jpg",
                         caption=f"""
 **▶ ابدأ تشغيل الأغاني من {chat}
 🏷️ العنوان : [{songname}]({link})
@@ -337,7 +337,7 @@ async def playlist(client, m: Message):
             await m.reply(QUE, disable_web_page_preview=True)
     else:
         await m.reply("**❌ لايوجد هناك تشغيل تالي**")
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["البعده"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(SUDO_USERS) & filters.command(["اليبعده"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def skip(client, m: Message):
     await m.delete()
