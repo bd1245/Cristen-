@@ -67,7 +67,7 @@ async def ytdl(link):
         return 1, stdout.decode().split("\n")[0]
     else:
         return 0, stderr.decode()
-@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["شغل"], prefixes=f"{HNDLR}"))
+@Client.on_message(    filters.user(SUDO_USERS) & filters.command(["شغل", "تشغيل"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def play(client, m: Message):
     replied = m.reply_to_message
@@ -76,7 +76,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔄 جاري التشغيل والمعالجه **")
+            huehue = await replied.reply("**🔄 يتم التشغيل والمعالجه **")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -114,7 +114,7 @@ async def play(client, m: Message):
             await m.reply("الرد على ملف صوتي أو إعطاء شيء للبحث")
         else:
             await m.delete()
-            huehue = await m.reply("🔎 يتم البحث بواسطه سورس كرستين")
+            huehue = await m.reply("🔎 يتم البحث بواسطه سورس ويلسون")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
