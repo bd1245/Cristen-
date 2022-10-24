@@ -91,7 +91,7 @@ async def play(client, m: Message):
                 await huehue.delete()
                 # await m.reply_to_message.delete()
                 await m.reply_photo(
-                    photo="https://telegra.ph/file/2a9253adaf3121c6645b7.jpg",
+                    photo="https://telegra.ph/file/4d5d8cb3347b011b28eb6.jpg",
                     caption=f"""
 **🏷️ العنوان : [{songname}]({link})
 💬 ايدي المحادثه : {chat_id}
