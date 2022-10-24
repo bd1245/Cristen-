@@ -337,7 +337,7 @@ async def playlist(client, m: Message):
             await m.reply(QUE, disable_web_page_preview=True)
     else:
         await m.reply("**❌ لايوجد هناك تشغيل تالي**")
-@Client.on_message(filters.user(SUDO_USERS) & filters.command(["اليبعده"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.user(SUDO_USERS) & filters.command(["غير", "تخطي"], prefixes=f"{HNDLR}"))
 @authorized_users_only
 async def skip(client, m: Message):
     await m.delete()
